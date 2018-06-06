@@ -1,32 +1,102 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<widget xlmns		= "http://www.w3.org/ns/widgets"
-		xlmns:gap	= "http://phonegap.com/ns/1.0"
-		id			= "com.dzb.faustocoppi"
-		versionCode	= "1"
-		version 	= "0.0.0.1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
 
-	<name>Menu Boot</name>
-	<description>
-		Application of the race dedicated to Fausto Coppi in Cuneo.
-	</description>
-	<author href="http://www.appfaustocoppi.altervista.org/"
-			email="alberto.deangelis@itiscuneo.eu">
-			Bono Lorenzo and De Angelis Alberto
-	</author>
 
-	<plugin name="cordova-plugin-inappbrowser" source="npm"/>
-  	<plugin name="cordova-plugin-network-information" source="npm"/>
-  	<plugin name="cordova-plugin-x-toast"/>
-  	<platform name="android" >
-  		<preference name="android-minSdkVersion"
-  					value="16"/>
-  		<preference name="android-targetSdkVersion"
-  					value="21"/>
-	</platform>
-	<platform name="ios">
-		<preference name="deployment-target" value="11.0"/>
-	</platform>
-	<platform name="winphone">
-		<preference name="windows-appx-target" value="8.1-phone" />
-	</platform>
-</widget> 
+<name>Hello World</name>
+
+
+<description>A sample PhoneGap application.</description>
+
+
+<author email="support@phonegap.com" href="http://phonegap.com"> PhoneGap Team</author>
+
+
+<content src="index.html"/>
+
+
+<access origin="*"/>
+
+
+<platform name="android">
+
+<!-- a preference specific to android only here -->
+</platform>
+
+<feature name="Device">
+
+<param name="android-package"
+value="org.apache.cordova.device.Device"
+/>
+</feature>
+
+
+<!-- Core/Common Preferences -->
+
+<preference name="Fullscreen" value="true"/> 
+
+<preference name="DisallowOverscroll" value="true"/> 
+
+<preference name="Orientation" value="landscape"/>
+
+<preference name="HideKeyboardFormAccessoryBar" value="false"/>
+
+<preference name="BackgroundColor" value="0xff0000ff"/>
+
+
+<!--iOS Preferences-->
+<preference name="EnableViewportScale" value="true"/> 
+
+<preference name="KeyboardDisplayRequiresUserAction" value="false"/>
+
+<preference name="MediaPlaybackRequiresUserAction" value="true"/>
+
+<preference name="AllowInlineMediaPlayback" value="true"/>
+
+<preference name="BackupWebStorage" value="false"/>
+
+<preference name="SuppressesIncrementalRendering" value="true"/>
+
+<preference name="GapBetweenPages" value="0"/>
+
+<preference name="PageLength" value="0"/>
+
+<preference name="PaginationBreakingMode" value="page"/>
+
+<preference name="PaginationMode" value="unpaginated"/>
+
+<preference name="UIWebViewDecelerationSpeed" value="fast"/>
+
+
+<!--Android Preferences-->
+<preference name="KeepRunning" value="false"/> 
+
+<preference name="LoadUrlTimeoutValue" value="10000"/>
+
+<preference name="SplashScreen" value="mySplash"/>
+
+<preference name="SplashScreenDelay" value="10000"/>
+
+<preference name="InAppBrowserStorageEnabled" value="true"/>
+
+<preference name="LoadingDialog" value="My Title,My Message"/>
+
+<preference name="LoadingPageDialog" value="My Title,My Message"/>
+
+<preference name="ErrorUrl" value="myErrorPage.html"/>
+
+<preference name="ShowTitle" value="true"/>
+
+<preference name="LogLevel" value="VERBOSE"/>
+
+<preference name="SetFullscreen" value="false"/>
+
+<preference name="AndroidLaunchMode" value="singleTop"/>
+	
+
+
+<icon src="res/ios/icon.png" platform="ios" width="57" height="57" density="mdpi"> </icon>
+
+
+<splash src="res/ios/icon.png" platform="ios" width="57" height="57" density="mdpi"> </splash>
+
+
+</widget>
